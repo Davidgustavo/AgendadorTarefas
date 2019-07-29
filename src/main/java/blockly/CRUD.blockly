@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="CRUD" ruleName="CRUD" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="446.233984375" scrolly="-187.7" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#fca03b" id="UYu$*Q^~steg+8K*rqmB" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-331" y="132">
+    <field name="NAME">Update</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="UYu$*Q^~steg+8K*rqmB" id=";U$9%]wMrn56~%_[e4QH" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">update</field>
+        <value name="VALUE">
+          <block colour="#aa2f00" dependencyby="UYu$*Q^~steg+8K*rqmB" id="Npv%@S%4!i[`aZcdNL};" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22alias%22:%22u%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22u.id%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22u.login%22,%22field%22:%22u.login%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:login%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22select%20u.id%20from%20User%20u%20where%20u.login%20=%20:login%22,%22params%22:%22%5B%5C%22login%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="login"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#5ba593" dependencyby="UYu$*Q^~steg+8K*rqmB" id="Dg3mb)Y,Klg?qf1-9$=e" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">teste</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#0088ee" dependencyby="UYu$*Q^~steg+8K*rqmB" id="}!Tdx)qo}r*?n3V:LqEb" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">update</field>
+            <value name="VALUE">
+              <block colour="#745ba5" dependencyby="UYu$*Q^~steg+8K*rqmB" id="0|)@{4UOydSW~bq^sS@T" origintype="lists_getIndex" output="true" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'GET FROM_START':&#10;      case 'GET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FROM;&#10;        break;&#10;      case 'GET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FIRST;&#10;        break;&#10;      case 'GET LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_LAST;&#10;        break;&#10;      case 'GET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_RANDOM;&#10;        break;&#10;      case 'GET_REMOVE FROM_START':&#10;      case 'GET_REMOVE FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM;&#10;        break;&#10;      case 'GET_REMOVE FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST;&#10;        break;&#10;      case 'GET_REMOVE LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST;&#10;        break;&#10;      case 'GET_REMOVE RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM;&#10;        break;&#10;      case 'REMOVE FROM_START':&#10;      case 'REMOVE FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM;&#10;        break;&#10;      case 'REMOVE FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST;&#10;        break;&#10;      case 'REMOVE LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST;&#10;        break;&#10;      case 'REMOVE RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        var msg = (where == 'FROM_START') ? Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP : Blockly.Msg.LISTS_INDEX_FROM_END_TOOLTIP;&#10;        tooltip += '  ' + msg.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_getIndex">
+                <mutation at="false" statement="false"/>
+                <field name="MODE">GET</field>
+                <field name="WHERE">FIRST</field>
+                <value name="VALUE">
+                  <block colour="#0088ee" dependencyby="UYu$*Q^~steg+8K*rqmB" id="VyOmKERh.;f#bdr-z*T`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">update</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#5ba58c" dependencyby="UYu$*Q^~steg+8K*rqmB" id="Fn}.Qsy;.bj)W]3lB}.T" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                <value name="TEXT">
+                  <shadow colour="#5ba593" dependencyby="UYu$*Q^~steg+8K*rqmB" id="7OhB;x`0AVIl4-D~2gyh" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block colour="#0088ee" dependencyby="UYu$*Q^~steg+8K*rqmB" id="T|.3gXG^4Y3|gC)@Yv8/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">update</field>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#aa2f00" dependencyby="UYu$*Q^~steg+8K*rqmB" id="yGbHp5jr6ZbL{L@|es9E" multilayer="false" namespace="cronapi.database.Operations.update" origintype="procedures_sql_update_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20um%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_update_callnoreturn">
+                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22type%22:%22update%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22operator%22:%22equal%22,%22field%22:%22email%22,%22value%22:%22:email%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22id%22,%22field%22:%22id%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:id%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22update%20User%20set%20email%20=%20:email%20where%20id%20=%20:id%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22email%5C%22,%5C%22id%5C%22%5D%22%7D" name="{{cronapi.database.Operations.update}}">
+                      <arg name="email"/>
+                      <arg name="id"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#5ba593" dependencyby="UYu$*Q^~steg+8K*rqmB" id="iTx*t^dgrW6JTsH)-hga" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">teste1</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#0088ee" dependencyby="UYu$*Q^~steg+8K*rqmB" id="-zcU;g*s?Bh8wTu(vUWE" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">update</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#934848" dependencyby="UYu$*Q^~steg+8K*rqmB" id="A]G=23~`bc6VN`O;1c{g" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                        <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#5ba593" dependencyby="UYu$*Q^~steg+8K*rqmB" id="e#D=V*tGm[N%n7NCY`+~" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">User</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#934848" dependencyby="UYu$*Q^~steg+8K*rqmB" id="5%XX]2V`HiI9xC58;wFg" origintype="util_dropdown" output="true" type="util_dropdown">
+                            <mutation>
+                              <arg name="true" value="Verdadeiro"/>
+                              <arg name="false" value="Falso"/>
+                            </mutation>
+                            <field name="SELECT">true</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#fca03b" id="yvMFLv{tL]/ZsTfds.}$" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-311" y="180">
+    <field name="NAME">Delete</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="SDX5i|myVj%K9|Yv(US6" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">delete</field>
+        <value name="VALUE">
+          <block colour="#aa2f00" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="k]rl$MwOmSVn|W[:~@Zy" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22alias%22:%22u%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22u.id%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22u.login%22,%22field%22:%22u.login%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:login%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22select%20u.id%20from%20User%20u%20where%20u.login%20=%20:login%22,%22params%22:%22%5B%5C%22login%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="login"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#5ba593" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="-^k6:ASQ_jtuYdiqd]q9" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">teste</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#0088ee" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="d/],q~H]ZU*J#M$vo0JY" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">delete</field>
+            <value name="VALUE">
+              <block colour="#745ba5" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="OXKC.5lfV)|L3{4v53`t" origintype="lists_getIndex" output="true" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'GET FROM_START':&#10;      case 'GET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FROM;&#10;        break;&#10;      case 'GET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FIRST;&#10;        break;&#10;      case 'GET LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_LAST;&#10;        break;&#10;      case 'GET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_RANDOM;&#10;        break;&#10;      case 'GET_REMOVE FROM_START':&#10;      case 'GET_REMOVE FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM;&#10;        break;&#10;      case 'GET_REMOVE FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST;&#10;        break;&#10;      case 'GET_REMOVE LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST;&#10;        break;&#10;      case 'GET_REMOVE RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM;&#10;        break;&#10;      case 'REMOVE FROM_START':&#10;      case 'REMOVE FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM;&#10;        break;&#10;      case 'REMOVE FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST;&#10;        break;&#10;      case 'REMOVE LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST;&#10;        break;&#10;      case 'REMOVE RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        var msg = (where == 'FROM_START') ? Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP : Blockly.Msg.LISTS_INDEX_FROM_END_TOOLTIP;&#10;        tooltip += '  ' + msg.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_getIndex">
+                <mutation at="false" statement="false"/>
+                <field name="MODE">GET</field>
+                <field name="WHERE">FIRST</field>
+                <value name="VALUE">
+                  <block colour="#0088ee" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="DZW[Ou#my_KN#WxE9-5s" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">delete</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#5ba58c" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="hiwpi]U*%m)+X:5cPk/{" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                <value name="TEXT">
+                  <shadow colour="#5ba593" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="zu~Bha,5|qcIpCxNOrOz" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block colour="#0088ee" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="}/AX/|lg2[j/#:#XQ1i/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">delete</field>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#aa2f00" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="~24R{yx*E)jknau{s};e" multilayer="false" namespace="cronapi.database.Operations.remove" origintype="procedures_sql_delete_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ERemover%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20remover%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.remove%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.remove%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_delete_callnoreturn">
+                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22type%22:%22delete%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22id%22,%22field%22:%22id%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:id%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22delete%20from%20User%20where%20id%20=%20:id%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22id%5C%22%5D%22%7D" name="{{cronapi.database.Operations.remove}}">
+                      <arg name="id"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="7`diN{Wu5M?$vS-to,+e" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delete</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="~rM@#~(:@c3Z3@P5g(fR" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                        <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#5ba593" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="m,xdkZ{ZzF0,960@lL9+" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">User</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id=":K7XFL8TQ,psX22.qv`-" origintype="util_dropdown" output="true" type="util_dropdown">
+                            <mutation>
+                              <arg name="true" value="Verdadeiro"/>
+                              <arg name="false" value="Falso"/>
+                            </mutation>
+                            <field name="SELECT">false</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-308" y="224">
+    <field name="NAME">Inserir</field>
+    <comment h="80" pinned="false" w="160">CRUD</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="kKdX8-TZ%59(?PF)C(`i" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">inserir</field>
+        <value name="VALUE">
+          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_?n.v[Z$;)7xg^z!}@=V" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field name="VAR">inserir</field>
+          </block>
+        </value>
+        <next>
+          <block colour="#aa2f00" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="{zd[sA2[;EMkGa=m%U]$" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22name%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22login%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22password%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22email%22,%22value%22:%22%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22password%5C%22,%5C%22name%5C%22,%5C%22login%5C%22,%5C%22email%5C%22%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+              <arg name="password"/>
+              <arg name="name"/>
+              <arg name="login"/>
+              <arg name="email"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="9RGO2+3B+n6:TG,*hi)0" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">teste</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="1BIe7M*~^66|3VBJ-.GF" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">teste</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="L%HFoT8sphrfa(H,05md" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">teste</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="6mzrL0`[l]2+X]z(C4fS" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">teste</field>
+              </block>
+            </value>
+            <next>
+              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*oy4{3!sYCQ=YgX5nbjY" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P+T3NYaQF(Ux7S:`VOh3" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">User</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a$|EtLlL=OW5x*(7hZV#" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Verdadeiro"/>
+                      <arg name="false" value="Falso"/>
+                    </mutation>
+                    <field name="SELECT">false</field>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="9QELDO+%~]*,@mo|6,%)" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                    <value name="TEXT">
+                      <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?eIU.jdWsA?[j2zJRc``" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">Teste</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="En9!;0PGx`Jn}a2jZ_Oi" origintype="datasource_from_screen" output="true" type="datasource_from_screen" x="263" y="368">
+    <field name="SELECT">User</field>
+  </block>
+  <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="*trhk+hX(!,/2C}E~(0;" origintype="datasource_from_screen" output="true" type="datasource_from_screen" x="113" y="383">
+    <field name="SELECT">User</field>
+  </block>
+</blockly>
