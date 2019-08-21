@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="CRUD" ruleName="CRUD" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="446.233984375" scrolly="-187.7" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="449.4" scrolly="-143.69999999999996" target="yvMFLv{tL]/ZsTfds.}$"/>
   <block colour="#fca03b" id="UYu$*Q^~steg+8K*rqmB" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-331" y="132">
     <field name="NAME">Update</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
@@ -60,25 +60,30 @@
                       </block>
                     </value>
                     <next>
-                      <block colour="#934848" dependencyby="UYu$*Q^~steg+8K*rqmB" id="A]G=23~`bc6VN`O;1c{g" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
-                        <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
-                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
-                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
-                        </mutation>
-                        <value name="ARG0">
-                          <block colour="#5ba593" dependencyby="UYu$*Q^~steg+8K*rqmB" id="e#D=V*tGm[N%n7NCY`+~" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                            <field name="TEXT">User</field>
-                          </block>
-                        </value>
-                        <value name="ARG1">
-                          <block colour="#934848" dependencyby="UYu$*Q^~steg+8K*rqmB" id="5%XX]2V`HiI9xC58;wFg" origintype="util_dropdown" output="true" type="util_dropdown">
-                            <mutation>
-                              <arg name="true" value="Verdadeiro"/>
-                              <arg name="false" value="Falso"/>
+                      <block colour="#aa2f00" dependencyby="UYu$*Q^~steg+8K*rqmB" id="o8puRMs+KkeG7*xbHFo4" multilayer="false" namespace="cronapi.database.Operations.commitTransaction" origintype="procedures_setentity_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECommit%20da%20Transa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20commit%20da%20transa%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.commitTransaction%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.commitTransaction%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_setentity_callnoreturn">
+                        <mutation data="%7B%22entity%22:%22app.entity.User%22,%22entityFullName%22:%22app.entity.User%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.commitTransaction}}"/>
+                        <next>
+                          <block colour="#934848" dependencyby="UYu$*Q^~steg+8K*rqmB" id="A]G=23~`bc6VN`O;1c{g" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                            <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
                             </mutation>
-                            <field name="SELECT">true</field>
+                            <value name="ARG0">
+                              <block colour="#5ba593" dependencyby="UYu$*Q^~steg+8K*rqmB" id="e#D=V*tGm[N%n7NCY`+~" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">User</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#934848" dependencyby="UYu$*Q^~steg+8K*rqmB" id="5%XX]2V`HiI9xC58;wFg" origintype="util_dropdown" output="true" type="util_dropdown">
+                                <mutation>
+                                  <arg name="true" value="Verdadeiro"/>
+                                  <arg name="false" value="Falso"/>
+                                </mutation>
+                                <field name="SELECT">true</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -144,25 +149,30 @@
                       </block>
                     </value>
                     <next>
-                      <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="~rM@#~(:@c3Z3@P5g(fR" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
-                        <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
-                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
-                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
-                        </mutation>
-                        <value name="ARG0">
-                          <block colour="#5ba593" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="m,xdkZ{ZzF0,960@lL9+" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                            <field name="TEXT">User</field>
-                          </block>
-                        </value>
-                        <value name="ARG1">
-                          <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id=":K7XFL8TQ,psX22.qv`-" origintype="util_dropdown" output="true" type="util_dropdown">
-                            <mutation>
-                              <arg name="true" value="Verdadeiro"/>
-                              <arg name="false" value="Falso"/>
+                      <block colour="#aa2f00" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="g_~LMAN#c)0ryccl}zC}" multilayer="false" namespace="cronapi.database.Operations.commitTransaction" origintype="procedures_setentity_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECommit%20da%20Transa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20commit%20da%20transa%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.commitTransaction%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.commitTransaction%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_setentity_callnoreturn">
+                        <mutation data="%7B%22entity%22:%22app.entity.User%22,%22entityFullName%22:%22app.entity.User%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.commitTransaction}}"/>
+                        <next>
+                          <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="~rM@#~(:@c3Z3@P5g(fR" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                            <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
                             </mutation>
-                            <field name="SELECT">false</field>
+                            <value name="ARG0">
+                              <block colour="#5ba593" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="m,xdkZ{ZzF0,960@lL9+" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">User</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id=":K7XFL8TQ,psX22.qv`-" origintype="util_dropdown" output="true" type="util_dropdown">
+                                <mutation>
+                                  <arg name="true" value="Verdadeiro"/>
+                                  <arg name="false" value="Falso"/>
+                                </mutation>
+                                <field name="SELECT">false</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -174,7 +184,7 @@
       </block>
     </statement>
   </block>
-  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-308" y="224">
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-291" y="257">
     <field name="NAME">Inserir</field>
     <comment h="80" pinned="false" w="160">CRUD</comment>
     <statement name="STACK">
@@ -214,32 +224,37 @@
               </block>
             </value>
             <next>
-              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*oy4{3!sYCQ=YgX5nbjY" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
-                <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
-                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
-                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
-                </mutation>
-                <value name="ARG0">
-                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P+T3NYaQF(Ux7S:`VOh3" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                    <field name="TEXT">User</field>
-                  </block>
-                </value>
-                <value name="ARG1">
-                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a$|EtLlL=OW5x*(7hZV#" origintype="util_dropdown" output="true" type="util_dropdown">
-                    <mutation>
-                      <arg name="true" value="Verdadeiro"/>
-                      <arg name="false" value="Falso"/>
-                    </mutation>
-                    <field name="SELECT">false</field>
-                  </block>
-                </value>
+              <block colour="#aa2f00" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P8R2PAa:w|)3R;zj-7v|" multilayer="false" namespace="cronapi.database.Operations.commitTransaction" origintype="procedures_setentity_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECommit%20da%20Transa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20commit%20da%20transa%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.commitTransaction%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.commitTransaction%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_setentity_callnoreturn">
+                <mutation data="%7B%22entity%22:%22app.entity.User%22,%22entityFullName%22:%22app.entity.User%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.commitTransaction}}"/>
                 <next>
-                  <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="9QELDO+%~]*,@mo|6,%)" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
-                    <value name="TEXT">
-                      <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?eIU.jdWsA?[j2zJRc``" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                        <field name="TEXT">Teste</field>
-                      </shadow>
+                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*oy4{3!sYCQ=YgX5nbjY" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                    <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P+T3NYaQF(Ux7S:`VOh3" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">User</field>
+                      </block>
                     </value>
+                    <value name="ARG1">
+                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a$|EtLlL=OW5x*(7hZV#" origintype="util_dropdown" output="true" type="util_dropdown">
+                        <mutation>
+                          <arg name="true" value="Verdadeiro"/>
+                          <arg name="false" value="Falso"/>
+                        </mutation>
+                        <field name="SELECT">false</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="9QELDO+%~]*,@mo|6,%)" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?eIU.jdWsA?[j2zJRc``" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Teste</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -248,11 +263,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="En9!;0PGx`Jn}a2jZ_Oi" origintype="datasource_from_screen" output="true" type="datasource_from_screen" x="263" y="368">
-    <field name="SELECT">User</field>
-  </block>
-  <block colour="#934848" dependencyby="yvMFLv{tL]/ZsTfds.}$" id="*trhk+hX(!,/2C}E~(0;" origintype="datasource_from_screen" output="true" type="datasource_from_screen" x="113" y="383">
-    <field name="SELECT">User</field>
   </block>
 </blockly>

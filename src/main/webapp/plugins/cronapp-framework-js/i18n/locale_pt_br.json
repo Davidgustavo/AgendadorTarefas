@@ -94,7 +94,7 @@
   "Format.Hour" : "HH:mm:ss",
   "Format.Money" : "#.#00,00",
   "Format.Decimal" : "#.#00,00",
-  "Format.Integer" : "###.###,",
+  "Format.Integer" : "#.##0,####",
   "DatePicker.today": "Hoje",
   "DatePicker.clear": "Limpar seleção",
   "DatePicker.close": "Fechar",
@@ -118,5 +118,7 @@
   "CancelChanges": "Cancelar alterações",
   "Edit": "Editar",
   "Remove": "Excluir",
-  "Cancel": "Cancelar"
+  "Cancel": "Cancelar",
+  "FieldIsInvalid": "Campo '{0}' é inválido!",
+  "FieldIsRequired": "Campo '{0}' é requerido!"
 }

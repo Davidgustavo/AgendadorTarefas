@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Send" ruleName="Send" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="486.39999999999986" scrolly="-151.9999999999999" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <field name="NAME">Executar</field>
+    <comment h="80" pinned="false" w="160">Send</comment>
+    <statement name="STACK">
+      <block colour="#b4ad51" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="y-A2+R($iEDIWO[QS?^~" multilayer="false" namespace="cronapi.email.Operations.sendEmail" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEnvia%20e-mail%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20envia%20e-mail%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20De%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Para%20:%20Texto%3C/span%3E%3Cdiv%3E%20Pode%20receber%20um%20%C3%BAnico%20ou%20uma%20lista%20de%20destinat%C3%A1rios%3C/div%3E%3Cspan%3E%20-%20Com%20c%C3%B3pia%20:%20Texto%3C/span%3E%3Cdiv%3E%20Um%20%C3%BAnico%20campo%20texto%20ou%20uma%20lista%20de%20destinat%C3%A1rios%3C/div%3E%3Cspan%3E%20-%20Com%20c%C3%B3pia%20oculta%20:%20Texto%3C/span%3E%3Cdiv%3E%20Um%20%C3%BAnico%20campo%20texto%20ou%20uma%20lista%20de%20textos%3C/div%3E%3Cspan%3E%20-%20Assunto%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Conte%C3%BAdo%20HTML%20:%20Texto%3C/span%3E%3Cdiv%3EEnvia%20mensagem%20com%20o%20conte%C3%BAdo%20do%20HTML%3C/div%3E%3Cspan%3E%20-%20Anexo(s)%20:%20Texto%3C/span%3E%3Cdiv%3E%20Caminho%20absoluto%20do%20anexo,%20ou%20lista%20com%20caminhos%20dos%20anexos%3C/div%3E%3Cspan%3E%20-%20Hospedeiro%20SMTP%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Porta%20SMTP%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Login%20:%20Texto%3C/span%3E%3Cdiv%3E%20Login%20para%20autentica%C3%A7%C3%A3o%20no%20hospedeiro%20SMTP%3C/div%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cdiv%3E%20Senha%20para%20autentica%C3%A7%C3%A3o%20no%20hospedeiro%20SMTP%3C/div%3E%3Cspan%3E%20-%20Protocolo%20:%20Texto%3C/span%3E%3Cdiv%3ETipo%20de%20protocolo%20para%20envio%20de%20e-mail%20no%20SMTP.%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.email.Operations.sendEmail%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.email.Operations.sendEmail%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.email.Operations.sendEmail}}" return-raw-type="void">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="De"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Para"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Com cópia"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Com cópia oculta"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Assunto"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Mensagem"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Conteúdo HTML"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Anexo(s)"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Hospedeiro SMTP"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Porta SMTP"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Login"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Senha"/>
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Protocolo"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="rEhi}]023b5B@3Wn|Tg0" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">david.alves@cronapp.io</field>
+          </shadow>
+        </value>
+        <value name="ARG1">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="DJB3-wIAq^_(k{1*3HH!" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">guga.lite@hotmail.com</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a*R:Wm1u`1Nunp*J#^-M" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT"/>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="%Ws7C2_LhV9o|+Nyi3IS" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT"/>
+          </shadow>
+        </value>
+        <value name="ARG4">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="hxz[.iT?OoWExB`wLAH4" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">Teste2 Cronapp</field>
+          </shadow>
+        </value>
+        <value name="ARG5">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="TGkl]TDc#4)!-8OjnIx{" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">Teste Cronapp</field>
+          </shadow>
+        </value>
+        <value name="ARG6">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Umv6/Kw%!7-Q_x4hP7fv" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">&lt;h1&gt; texto grande &lt;/h1&gt;</field>
+          </shadow>
+        </value>
+        <value name="ARG7">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="WT%tae-UZ7Wx6c?OK-c^" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT"/>
+          </shadow>
+        </value>
+        <value name="ARG8">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="jO1u-KkFK0r@bpPf9$yO" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">smtp.office365.com</field>
+          </shadow>
+        </value>
+        <value name="ARG9">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P;{7cNJ@-=H0}-tlIdsO" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">587</field>
+          </shadow>
+        </value>
+        <value name="ARG10">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Iqz`KHhCMtTV;QJIt](?" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">david.alves@cronapp.io</field>
+          </shadow>
+        </value>
+        <value name="ARG11">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="oUqPHvdw%^/6(#,3XsD4" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">714280C!ntia</field>
+          </shadow>
+        </value>
+        <value name="ARG12">
+          <block colour="#b4ad51" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="!a-j-Y,qt82m=0,@/gTs" origintype="util_dropdown" output="true" type="util_dropdown">
+            <mutation>
+              <arg name="SSL" value="SSL"/>
+              <arg name="TLS" value="TLS"/>
+              <arg name="PLAIN" value="PLAIN"/>
+            </mutation>
+            <field name="SELECT">TLS</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="c.XEWVuqXocsz*DmT8w*" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" x="218" y="503">
+    <field name="BOOL">FALSE</field>
+  </block>
+</blockly>

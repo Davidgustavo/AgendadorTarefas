@@ -15,36 +15,36 @@ import org.springframework.stereotype.Component;
 import cronapi.Var;
 
 /**
- * Tarefa Agendada CRUD
+ * Tarefa Agendada Inserte
  *
- * teste
+ * insere no banco
  */
 @Component
 @DisallowConcurrentExecution
-public class CRUDJob implements Job {
+public class InserteJob implements Job {
 
   @Override
   public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
     try {
-      //teste
+      //insere
       blockly.CRUD.Inserir();
     } catch (Exception e) {
       throw new JobExecutionException(e);
     }
   }
 
-  @Bean(name = "cRUDJobDetail")
-  public JobDetailFactoryBean cRUDJobDetail() {
+  @Bean(name = "inserteJobDetail")
+  public JobDetailFactoryBean inserteJobDetail() {
     return SchedulerConfigurer.createJobDetail(this.getClass());
   }
 
   /**
-   * teste
-   * 25 segundos depois do minuto
+   * insere
+   * A cada minuto
    */
-  @Bean(name = "cRUDJobTesteTrigger")
-  public CronTriggerFactoryBean cRUDJobTesteTrigger(@Qualifier("cRUDJobDetail") JobDetail jobDetail) {
+  @Bean(name = "inserteJobInsereTrigger")
+  public CronTriggerFactoryBean inserteJobInsereTrigger(@Qualifier("inserteJobDetail") JobDetail jobDetail) {
 
-    return SchedulerConfigurer.createCronTrigger(jobDetail, "25 * * * * ?");
+    return SchedulerConfigurer.createCronTrigger(jobDetail, "0 */1 * * * ?");
   }
 }

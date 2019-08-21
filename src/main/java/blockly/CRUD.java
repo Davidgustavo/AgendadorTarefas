@@ -24,6 +24,7 @@ public static Var Inserir() throws Exception {
    public Var call() throws Exception {
     inserir = inserir;
     cronapi.database.Operations.insert(Var.valueOf("app.entity.User"),Var.valueOf("password",Var.valueOf("teste")),Var.valueOf("name",Var.valueOf("teste")),Var.valueOf("login",Var.valueOf("teste")),Var.valueOf("email",Var.valueOf("teste")));
+    cronapi.database.Operations.commitTransaction(Var.valueOf("app.entity.User"));
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"), Var.valueOf("User"), Var.valueOf("false"));
     System.out.println(Var.valueOf("Teste").getObjectAsString());
     return Var.VAR_NULL;
@@ -46,6 +47,7 @@ public static Var Delete() throws Exception {
     delete = cronapi.list.Operations.getFirst(delete);
     System.out.println(delete.getObjectAsString());
     cronapi.database.Operations.execute(Var.valueOf("app.entity.User"), Var.valueOf("delete from User where id = :id"),Var.valueOf("id",delete));
+    cronapi.database.Operations.commitTransaction(Var.valueOf("app.entity.User"));
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"), Var.valueOf("User"), Var.valueOf("false"));
     return Var.VAR_NULL;
    }
@@ -67,6 +69,7 @@ public static Var Update() throws Exception {
     update = cronapi.list.Operations.getFirst(update);
     System.out.println(update.getObjectAsString());
     cronapi.database.Operations.execute(Var.valueOf("app.entity.User"), Var.valueOf("update User set email = :email where id = :id"),Var.valueOf("email",Var.valueOf("teste1")),Var.valueOf("id",update));
+    cronapi.database.Operations.commitTransaction(Var.valueOf("app.entity.User"));
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"), Var.valueOf("User"), Var.valueOf("true"));
     return Var.VAR_NULL;
    }
